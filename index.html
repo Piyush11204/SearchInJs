@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"><div className="App">
-        <button onClick={() => setCounter((prevCounter)=> prevCounter-1)}>-</button>
-        <h1>{Counter}</h1>
-        <button onClick={() => setCounter((prevCounter)=>prevCounter+1)}>+</button>
-      </div>
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>letsSearch</title>
+    <title>Let's Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1 class="head">How to use search Bar</h1>
-    <div class="search-container main-container">
-        <i class="fa fa-search"></i>
-        <input type="text" id="search-input" placeholder="Search" autocomplete="on"/>
-        </div>
-        <div class="main-container">
-        <div id="nothing-alert">Nothing Found</div>
-        <div class="cards"><h2 class="icon-name">One Piece</h2></div>
-        <div class="cards"><h2 class="icon-name">Demon Slayer</h2></div>
-        <div class="cards"><h2 class="icon-name">Black clover</h2></div>
-        <div class="cards"><h2 class="icon-name">Fairy Ttails</h2></div>
-        <div class="cards"><h2 class="icon-name">Goalden Times</h2></div>
-        <div class="cards"><h2 class="icon-name">Bleach</h2></div>
-        <div class="cards"><h2 class="icon-name">JJK</h2></div>
-        <div class="cards"><h2 class="icon-name">Death Note</h2></div>
-        <div class="cards"><h2 class="icon-name">Konosuba</h2></div>
-        <div class="cards"><h2 class="icon-name">Naruto</h2></div>
-        <div class="cards"><h2 class="icon-name">Noregami</h2></div>
-        <div class="cards"><h2 class="icon-name">Voilate Evergarden</h2></div>
-        <div class="cards"><h2 class="icon-name">Her blue Sky</h2></div>
-        <div class="cards"><h2 class="icon-name">Suzume</h2></div>
-        <div class="cards"><h2 class="icon-name">Boruto</h2></div>
-        <div class="cards"><h2 class="icon-name">one punch man</h2></div>
-        <div class="cards"><h2 class="icon-name">Spy Family</h2></div>
-        <div class="cards"><h2 class="icon-name">Full metal Alcamist</h2></div>
-        <div class="cards"><h2 class="icon-name">Goblin Slayer</h2></div>
-        <div class="cards"><h2 class="icon-name">Classroom of elits</h2></div>
-        
+    <header>
+        <h1>Welcome to Let's Search</h1>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for your favorite anime..." autocomplete="on"/>
+                <button class="search-button"><i class="fa fa-search"></i></button>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2 class="results-title">Results</h2>
+            <div class="cards-container">
+                <div class="card"><h2 class="icon-name">One Piece</h2></div>
+                <div class="card"><h2 class="icon-name">Demon Slayer</h2></div>
+                <div class="card"><h2 class="icon-name">Black Clover</h2></div>
+                <div class="card"><h2 class="icon-name">Fairy Tail</h2></div>
+                <div class="card"><h2 class="icon-name">Golden Times</h2></div>
+                <div class="card"><h2 class="icon-name">Bleach</h2></div>
+                <div class="card"><h2 class="icon-name">JJK</h2></div>
+                <div class="card"><h2 class="icon-name">Death Note</h2></div>
+                <div class="card"><h2 class="icon-name">Konosuba</h2></div>
+                <div class="card"><h2 class="icon-name">Naruto</h2></div>
+                <div class="card"><h2 class="icon-name">Noragami</h2></div>
+                <div class="card"><h2 class="icon-name">Violet Evergarden</h2></div>
+                <div class="card"><h2 class="icon-name">Her Blue Sky</h2></div>
+                <div class="card"><h2 class="icon-name">Suzume</h2></div>
+                <div class="card"><h2 class="icon-name">Boruto</h2></div>
+                <div class="card"><h2 class="icon-name">One Punch Man</h2></div>
+                <div class="card"><h2 class="icon-name">Spy Family</h2></div>
+                <div class="card"><h2 class="icon-name">Fullmetal Alchemist</h2></div>
+                <div class="card"><h2 class="icon-name">Goblin Slayer</h2></div>
+                <div class="card"><h2 class="icon-name">Classroom of Elite</h2></div>
+            </div>
+            <div id="nothing-alert" class="alert">Nothing Found</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Let's Search. All rights reserved.</p>
+    </footer>
 </body>
 </html>
